@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-white to-blue-50 text-gray-800">
@@ -25,9 +26,11 @@ export default function Home() {
             get instant scores, and master calculus like never before.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            <Link
+              href="/exam" 
+              className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
               Start New Calculus Exam
-            </button>
+            </Link>
             <button className="border-2 border-purple-600 text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
               Review Past Performance
             </button>
